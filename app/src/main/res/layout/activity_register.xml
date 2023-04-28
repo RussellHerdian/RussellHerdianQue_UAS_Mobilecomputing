@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="REGISTER"
+        android:fontFamily="@font/carrots"
+        android:textColor="#455BAE"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:fontFamily="@font/carrots"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPersonName"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:fontFamily="@font/carrots"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Password"
+        android:fontFamily="@font/carrots"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="CONFIRM PASSWORD"
+        android:fontFamily="@font/carrots"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPassword2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#FF6200EE"
+        android:fontFamily="@font/carrots"
+        android:text="REGISTER" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Have an account?"
+        android:textSize="20dp"
+        android:fontFamily="@font/carrots"/>
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/textView8"
+        android:layout_toRightOf="@id/textView8"
+        android:fontFamily="@font/carrots"
+        android:text="Login"
+        android:textColor="#FF6200EE"
+        android:textSize="20dp" />
+</RelativeLayout>

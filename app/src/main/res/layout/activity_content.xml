@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- CardView 1 -->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Gambar -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bunaken"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Judul -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bunaken Marine Park"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <!-- Lokasi -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manado, Sulawesi Utara"
+                    android:padding="8dp"/>
+
+                <!-- Rating -->
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+
+        <!-- CardView 2 -->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Gambar -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tangkoko"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Judul -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tangkoko Nature Reserve"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <!-- Lokasi -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bitung, Sulawesi Utara"
+                    android:padding="8dp"/>
+
+                <!-- Rating -->
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4.0"
+                    android:stepSize="0.5"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+
+        <!-- CardView 3 -->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Gambar -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/danautondano"
+                    android:scaleType="centerCrop"/>
+
+                <!-- Judul -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lake Tondano"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <!-- Lokasi -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minahasa, Sulawesi Utara"
+                    android:padding="8dp"/>
+
+                <!-- Rating -->
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+        <!-- CardView 4 -->
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Gambar -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/linow"
+                android:scaleType="centerCrop"/>
+
+            <!-- Judul -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danau Linow"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Lokasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomohon, Sulawesi Utara"
+                android:padding="8dp"/>
+
+            <!-- Rating -->
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.0"
+                android:stepSize="0.5"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <!-- CardView 5 -->
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Gambar -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kaliwaterfall"
+                android:scaleType="centerCrop"/>
+
+            <!-- Judul -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kali Waterfall"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <!-- Lokasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomohon, Sulawesi Utara"
+                android:padding="8dp"/>
+
+            <!-- Rating -->
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.5"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
