@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/bckgrnd">
 
     <TextView
         android:id="@+id/textView"
@@ -15,67 +15,59 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="REGISTER"
         android:fontFamily="@font/carrots"
-        android:textColor="#455BAE"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
+
 
     <EditText
         android:id="@+id/textPersonName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_below="@id/textView"
         android:layout_marginTop="60dp"
-        android:ems="10"
-        android:fontFamily="@font/carrots"
         android:hint="Name"
+        android:ems="10"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/InputEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_below="@id/textPersonName"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:hint="Email"
-        android:fontFamily="@font/carrots"
-        />
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/InputPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_height="48dp"
+        android:layout_below="@id/InputEmail"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:hint="Password"
-        android:fontFamily="@font/carrots"
-        />
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/ConfigPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_height="48dp"
+        android:layout_below="@id/InputEmail"
         android:layout_marginTop="100dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="CONFIRM PASSWORD"
-        android:fontFamily="@font/carrots"
-        />
+        android:hint="Confirm Password"
+        android:inputType="textEmailAddress" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnregister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextTextPassword2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_below="@id/ConfigPassword"
+        android:layout_marginTop="19dp"
         android:background="#FF6200EE"
         android:fontFamily="@font/carrots"
         android:text="REGISTER" />
@@ -84,23 +76,22 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button2"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnregister"
         android:layout_marginLeft="90dp"
+        android:layout_marginTop="173dp"
         android:text="Have an account?"
-        android:textSize="20dp"
-        android:fontFamily="@font/carrots"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button2"
+        android:layout_below="@id/btnregister"
+        android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="172dp"
         android:layout_toEndOf="@id/textView8"
         android:layout_toRightOf="@id/textView8"
-        android:fontFamily="@font/carrots"
         android:text="Login"
         android:textColor="#FF6200EE"
         android:textSize="20dp" />
