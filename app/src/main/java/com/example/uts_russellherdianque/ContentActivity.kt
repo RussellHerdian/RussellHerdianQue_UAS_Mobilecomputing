@@ -3,10 +3,13 @@ package com.example.uts_russellherdianque
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.uts_russellherdianque.databinding.ActivityContentBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -48,6 +51,8 @@ class ContentActivity : AppCompatActivity() {
 
             }
 
+
+
             override fun onDataChange(snapshot: DataSnapshot) {
                 wisataList.clear()
                 if (snapshot.exists()){
@@ -61,4 +66,22 @@ class ContentActivity : AppCompatActivity() {
             }
         })
     }
+    override fun onCreateOptionsMenu (menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.mymenu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean{
+        when (item.itemId){
+            R.id.Logout ->
+            {
+                FirebaseAuth.getInstance().signOut()
+                Intent(this, MainActivity::class.java).also{
+                    it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(it)
+                }
+            }
+        }
+        return true
+    }
+
 }

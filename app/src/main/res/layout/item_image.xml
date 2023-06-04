@@ -36,6 +36,17 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

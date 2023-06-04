@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -16,6 +17,7 @@ class ImageAdapter (var mContext: Context, var images: List<Image>
     inner class ImageViewHolder (var v: View) : RecyclerView.ViewHolder(v) {
         val imageSrc = v.findViewById<ImageView>(R.id._image)
         val title = v.findViewById<TextView>(R.id._title)
+        val ratingBar = v.findViewById<RatingBar>(R.id.ratingBar)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
@@ -27,7 +29,10 @@ class ImageAdapter (var mContext: Context, var images: List<Image>
         val newList = images[position]
         holder.imageSrc.loadImage(newList.imageSrc)
         holder.title.text = newList.imageTitle
+        holder.ratingBar.rating = newList.rating
         holder.v.setOnClickListener {
+            holder.ratingBar.setOnRatingBarChangeListener { ratingBar, rating, fromUser ->
+                newList.rating = rating}
 
             val imageSrc = newList.imageSrc
             val imageTitle = newList.imageTitle
@@ -38,6 +43,8 @@ class ImageAdapter (var mContext: Context, var images: List<Image>
             mIntent.putExtra("IMAGETITLE", imageTitle)
             mIntent.putExtra("IMAGEDESC", imageDesc)
             mContext.startActivity(mIntent)
+
+
         }
     }
 

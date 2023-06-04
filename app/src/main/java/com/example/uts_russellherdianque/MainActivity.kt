@@ -1,6 +1,6 @@
 package com.example.uts_russellherdianque
 
-import android.content.Intent
+import  android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
@@ -54,12 +54,9 @@ class MainActivity : AppCompatActivity() {
         binding.textRegister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
-
-        //binding.txtForgotPassword.setOnclickListener{
-        //  Intent(this, ResetPasswordActivity::class.java).also {
-        //    startActivity(it)
-        //}
-        //}
+        binding.textForgotPassword.setOnClickListener {
+            startActivity(Intent( this, ResetPasswordActivity::class.java))
+        }
     }
 
     private fun loginUser(email: String, password: String) {
